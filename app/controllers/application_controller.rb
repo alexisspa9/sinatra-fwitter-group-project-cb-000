@@ -33,7 +33,10 @@ get '/tweets' do
   end
 end
   get '/tweets/new' do
-    erb :'tweets/create_tweet'
+    if logged_in?
+      erb :'tweets/create_tweet'
+    else
+    
   end
   post '/tweets' do
 
