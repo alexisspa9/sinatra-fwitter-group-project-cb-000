@@ -25,11 +25,14 @@ class ApplicationController < Sinatra::Base
 
   end
   post 'tweets/:id/delete' do
-    
+
   end
   get '/signup' do
 
     erb :create_user
+  end
+  post '/signup' do
+    
   end
 
 end
