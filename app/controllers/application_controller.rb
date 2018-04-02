@@ -15,5 +15,8 @@ class ApplicationController < Sinatra::Base
   post '/tweets' do
     
   end
+  get '/tweets/:id' do
+    erb :show_tweet
+  end
 
 end
