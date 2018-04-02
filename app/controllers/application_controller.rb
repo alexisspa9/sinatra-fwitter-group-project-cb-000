@@ -44,7 +44,7 @@ class ApplicationController < Sinatra::Base
   end
   get '/signup' do
 
-    erb :create_user
+    erb :'users/create_user'
   end
   post '/signup' do
 
@@ -52,7 +52,7 @@ class ApplicationController < Sinatra::Base
 
   get '/login' do
 
-    erb :login
+    erb :'users/login'
   end
   post '/login' do
 
