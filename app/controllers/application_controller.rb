@@ -23,7 +23,9 @@ class ApplicationController < Sinatra::Base
     end
 
   end
-
+get '/tweets' do
+  if !logged_in?
+end
   get '/tweets/new' do
     erb :'tweets/create_tweet'
   end
