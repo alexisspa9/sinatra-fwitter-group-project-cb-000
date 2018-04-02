@@ -42,6 +42,9 @@ end
   end
   post '/tweets' do
     if logged_in?
+    else
+      redirect to '/login'
+    end
 
   end
   get '/tweets/:id' do
