@@ -24,7 +24,8 @@ class ApplicationController < Sinatra::Base
 
   end
 get '/tweets' do
-  if !logged_in?
+  if logged_in?
+    
   else
 
   end
