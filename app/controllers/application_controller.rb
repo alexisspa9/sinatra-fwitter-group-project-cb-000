@@ -49,7 +49,7 @@ end
         if @tweet.save
           redirect to 'tweets/#{@tweet.id}'
         else
-          redirect to "/tweet/new"
+          redirect to "/tweets/new"
         end
       end
     else
