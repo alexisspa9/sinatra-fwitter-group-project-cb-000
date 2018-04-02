@@ -36,7 +36,9 @@ end
     if logged_in?
       erb :'tweets/create_tweet'
     else
-    
+      redirect to '/login'
+    end
+
   end
   post '/tweets' do
 
