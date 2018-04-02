@@ -86,19 +86,19 @@ end
         if @tweet && @tweet.user == current_user
           if @tweet.update(content: params[:content])
             redirect to "/tweets/#{@tweet.id}"
-          else 
+          else
             redirect to "/tweets/#{@tweet.id}/edit"
           end
-        else 
+        else
           redirect to '/tweets'
         end
       end
-    else 
+    else
       redirect to '/login'
     end
 
   end
-  post 'tweets/:id/delete' do
+  delete 'tweets/:id/delete' do
 
   end
   get '/signup' do
