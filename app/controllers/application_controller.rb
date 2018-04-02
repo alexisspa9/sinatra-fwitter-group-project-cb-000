@@ -41,6 +41,7 @@ end
 
   end
   post '/tweets' do
+    if logged_in?
 
   end
   get '/tweets/:id' do
