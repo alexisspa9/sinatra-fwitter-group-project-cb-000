@@ -101,7 +101,13 @@ end
   delete 'tweets/:id/delete' do
     if logged_in?
       @tweet = Tweet.find_by_id(params[:id])
-
+      if @tweet && @tweet.user == current_user
+        @tweet.delete
+      end
+      redirect to '/tweets'
+    else
+      redirect to '/login'
+    end
   end
   get '/signup' do
 
