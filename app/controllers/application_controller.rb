@@ -44,6 +44,11 @@ end
     if logged_in?
       if params[:content] == ""
         redirect to '/tweet/new'
+      else
+        @tweet = current_user.tweets.build(content: params[:content])
+        if @tweet.save
+          redirect to 'tweets/#{@tweet.id}'
+      end
     else
       redirect to '/login'
     end
