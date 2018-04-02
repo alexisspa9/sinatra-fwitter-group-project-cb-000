@@ -37,10 +37,12 @@ class ApplicationController < Sinatra::Base
 
   get '/login' do
 
-    erb :create_user
+    erb :login
   end
   post '/login' do
 
   end
-
+  get '/logout' do
+    
+  end
 end
