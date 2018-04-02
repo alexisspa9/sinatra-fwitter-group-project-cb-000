@@ -32,7 +32,15 @@ class ApplicationController < Sinatra::Base
     erb :create_user
   end
   post '/signup' do
-    
+
+  end
+
+  get '/login' do
+
+    erb :create_user
+  end
+  post '/login' do
+
   end
 
 end
