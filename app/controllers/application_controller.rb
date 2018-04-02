@@ -9,5 +9,8 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
+  get '/tweets/new' do
+    erb :create_tweet
+  end
 
 end
