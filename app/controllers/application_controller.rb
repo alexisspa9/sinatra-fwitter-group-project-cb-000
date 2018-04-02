@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
 
   end
   get '/tweets/:id' do
-    erb :show_tweet
+    erb :'tweets/show_tweet'
   end
   get '/tweets/:id/edit' do
     erb :edit_tweet
