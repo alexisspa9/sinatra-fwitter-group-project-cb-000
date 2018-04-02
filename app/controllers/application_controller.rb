@@ -42,6 +42,8 @@ end
   end
   post '/tweets' do
     if logged_in?
+      if params[:content] == ""
+        redirect to '/tweet/new'
     else
       redirect to '/login'
     end
