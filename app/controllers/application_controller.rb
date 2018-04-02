@@ -12,5 +12,8 @@ class ApplicationController < Sinatra::Base
   get '/tweets/new' do
     erb :create_tweet
   end
+  post '/tweets' do
+    
+  end
 
 end
