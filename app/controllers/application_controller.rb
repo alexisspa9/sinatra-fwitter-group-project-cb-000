@@ -24,5 +24,8 @@ class ApplicationController < Sinatra::Base
   post '/tweets/:id' do
     
   end
+  post 'tweets/:id/delete' do
+    
+  end
 
 end
